@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-bg: #10375c;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -9,4 +13,84 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
+}
+/* =============== Common =============== */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #2e80ce;
+  min-width: 205px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 999px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+/* =============== Header =============== */
+.header {
+  background: var(--header-bg);
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.header .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar__list {
+  display: flex;
+}
+
+.header .action__login,
+.header .navbar__link {
+  padding: 8px 21px;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.header .navbar__link:hover,
+.header .navbar__link--active {
+  text-shadow: 1px 0 0 currentColor;
+  color: #fff;
+}
+
+.header .navbar__link--active::before {
+  position: relative;
+  right: 8px;
+  top: -3px;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background: #c9d2da;
+}
+
+.header .action__signup {
+  min-width: 144px;
+  line-height: 44px;
+  font-size: 1.6rem;
+}
+
+.header .action__login {
+  margin-right: 7px;
 }
