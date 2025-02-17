@@ -153,6 +153,7 @@ a {
   display: flex;
   align-items: center;
   padding-top: 76px;
+  padding-bottom: 110px;
 }
 
 .hero .hero__content {
