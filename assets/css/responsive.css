@@ -137,6 +137,46 @@
   .service__list {
     text-align: center;
   }
+
+  /* 12. Khối Works */
+  .work__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .work-heading {
+    text-align: center;
+  }
+
+  .work-desc {
+    margin: 18px auto 0;
+    text-align: center;
+  }
+
+  /* 13. Khối About */
+  .about-row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .about__media {
+    width: 100%;
+  }
+
+  /* Ẩn ảnh nhỏ */
+  .about__img--small {
+    display: none;
+  }
+
+  .about__img--big {
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+
+  .about-content {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 /* Tablet */
