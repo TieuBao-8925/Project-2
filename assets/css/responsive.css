@@ -197,18 +197,188 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  /* 16. Khối Blog */
+  .blog__inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .blog__list {
+    order: 1;
+  }
+
+  .blog__content {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__heading {
+    width: 90%;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* 1. Ẩn cột 2 trong khối Footer */
+  .footer-hidden-tablet-2 {
+    display: none;
+  }
+
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+
+  .footer__copyright {
+    margin-top: 30px;
+  }
+
+  /* 2. Ẩn btn trong khối Header */
+  .show-on-mobile {
+    display: none;
+  }
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
-}
+  /* 1. Khối Header */
+  .action {
+    display: none;
+  }
 
-/* Phần không liên quan */
+  .menu-header__icon {
+    top: 16px;
+  }
 
-.footer {
-  display: none;
+  .header__logo {
+    left: 86%;
+  }
+
+  .menu-drawer {
+    inset: 0 30% 0 0;
+    padding: 40px;
+  }
+
+  .navbar__item {
+    list-style-type: none;
+  }
+
+  /* 2. Thêm gạch kẻ ngăn cta group */
+  .separate {
+    border-top: 1.5px solid #fff;
+    margin-top: 15px;
+  }
+
+  /* 3. Khối Hero */
+  .hero__img-small {
+    display: none;
+  }
+
+  .hero .hero__img-large {
+    width: 100%;
+    height: auto;
+    margin-right: -1px;
+  }
+
+  .hero .hero__heading {
+    font-size: 2.5rem;
+  }
+
+  .hero .hero__desc {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .hero__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  /* 4. Khối Services */
+  .service {
+    padding: 70px 0;
+  }
+
+  .service__desc {
+    width: 93%;
+  }
+
+  .service__img {
+    height: auto;
+  }
+
+  /* 5. Khối Works */
+  .work-desc {
+    width: 100%;
+  }
+
+  .work-item {
+    padding: 20px;
+  }
+
+  /* 6. Khối About */
+  .about {
+    margin-top: 20px;
+    padding: 40px 0;
+  }
+
+  .section-heading {
+    font-size: 3rem;
+  }
+
+  .section-desc {
+    font-size: 1.5rem;
+  }
+
+  /* 7. Khối Team */
+  .team-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* 8. Khối Install Mobile */
+  .install__inner {
+    margin: 40px 0;
+    padding: 0 8px;
+  }
+
+  .install__content {
+    min-width: 250px;
+  }
+
+  .install__desc {
+    font-size: 1.5rem;
+  }
+
+  /* 9. Khối Blog */
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .blog__heading {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+
+  /* 10. Khối Appointment */
+  .appointment__inner {
+    padding: 30px 5px;
+  }
+
+  /* 11. Khối Footer */
+  .footer__top {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .footer-hidden-tablet-3 {
+    display: none;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
